@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:foodapp/presentation/widgets/card_widget.dart';
 import 'package:foodapp/presentation/widgets/categories.dart';
@@ -9,11 +10,16 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Padding(
+        leading:  Padding(
           padding: EdgeInsets.all(5.0),
-          child: CircleAvatar(
-            backgroundImage: NetworkImage(
-                'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.1900052020.1717854544&semt=sph'),
+          child: InkWell(
+            onTap: (){
+              Navigator.of(context).pushNamed('/profile');
+            },
+            child: CircleAvatar(
+              backgroundImage: NetworkImage(
+                  'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.1900052020.1717854544&semt=sph'),
+            ),
           ),
         ),
         title: const Text(
@@ -23,7 +29,7 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.notifications_none),
+            icon: const Icon(CupertinoIcons.chat_bubble_fill,color: Color(0xffDA1A32),),
           )
         ],
       ),
