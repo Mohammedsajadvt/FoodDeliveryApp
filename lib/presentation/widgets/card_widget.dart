@@ -17,7 +17,7 @@ class CardWidget extends StatelessWidget {
                   Image.asset('images/Super Supreme.png'),
                   SizedBox(height: 8.0),
                   Text('Super Supreme',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-                  Text('Daging Sapi Asap, Daging Ayam Asap, Burger Sapi, Jamur, Nanas, Paprika dan Keju Mozzarella'),
+                  Text('Daging Sapi Asap, Daging Ayam Asap, Burger Sapi, Jamur, Nanas, Paprika dan Keju Mozzarella',overflow: TextOverflow.ellipsis,),
                   Text('₹199',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                    Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -36,10 +36,10 @@ class CardWidget extends StatelessWidget {
               padding: EdgeInsets.all(8.0),
               child: Column(
                 children: [
-                  Image.asset('images/Frankfurter BBQ.png'),
+                  Image.asset('images/pizza.jpg'),
                   SizedBox(height: 8.0),
                   Text('Frankfurter BBQ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-                  Text('Frankfurter Sapi, Daging Sapi Cincang, Saus Honey BBQ'),
+                  Text('Daging Sapi Asap, Daging Ayam Asap, Burger Sapi, Jamur, Nanas, Paprika dan Keju Mozzarella',overflow: TextOverflow.ellipsis,),
                   Text('₹199',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

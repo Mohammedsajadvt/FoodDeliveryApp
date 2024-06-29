@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:foodapp/presentation/bloc/bottom_navigation/bottom_nav_bloc.dart';
-import 'package:foodapp/presentation/pages/onboarding.dart';
 import 'package:foodapp/presentation/routes/generated_routes.dart';
 
 void main() {

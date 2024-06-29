@@ -16,7 +16,7 @@ class ProfileScreen extends StatelessWidget {
         ),leading: IconButton(onPressed: (){
         Navigator.maybePop(context);
       }, icon: const Icon(CupertinoIcons.back)),centerTitle: true,),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

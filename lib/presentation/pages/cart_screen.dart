@@ -44,7 +44,7 @@ class CartScreen extends StatelessWidget {
                   contentPadding: const EdgeInsets.all(10.0),
                   leading: Image.asset(
                     'images/Super Supreme.png',
-                    fit: BoxFit.cover,
+                    fit: BoxFit.contain,
                     height: 70,
                     width: 60,
                   ),

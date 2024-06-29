@@ -55,9 +55,9 @@ class WishlistScreen extends StatelessWidget {
                         children: [
                           Image.asset(
                             'images/Super Supreme.png',
-                            fit: BoxFit.cover,
+                            fit: BoxFit.contain,
                             height: 150, 
-                            width: double.infinity, 
+                            width: 160, 
                           ),
                           const SizedBox(height: 8.0),
                           const Text(
