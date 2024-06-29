@@ -38,7 +38,7 @@ class CardWidget extends StatelessWidget {
                 children: [
                   Image.asset('images/Frankfurter BBQ.png'),
                   SizedBox(height: 8.0),
-                  Text('Frankfurter BBQ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
+                  Text('Frankfurter BBQ',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
                   Text('Frankfurter Sapi, Daging Sapi Cincang, Saus Honey BBQ'),
                   Text('₹199',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
                   Row(

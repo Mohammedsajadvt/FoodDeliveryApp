@@ -15,7 +15,15 @@ class ProfileScreen extends StatelessWidget {
           ),
         ),leading: IconButton(onPressed: (){
         Navigator.maybePop(context);
-      }, icon: Icon(CupertinoIcons.back)),centerTitle: true,),
+      }, icon: const Icon(CupertinoIcons.back)),centerTitle: true,),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          CircleAvatar(radius: 60,),
+          
+        ],),
+      ),
     );
   }
 }
