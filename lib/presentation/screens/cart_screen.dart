@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/constant/colors.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -11,7 +12,7 @@ class CartScreen extends StatelessWidget {
           'Your Carts',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: Color(0xffDA1A32),
+            color: red,
           ),
         ),
         actions: [
@@ -89,7 +90,7 @@ class CartScreen extends StatelessWidget {
                height: 65,
                margin: const EdgeInsets.only(left: 50, right: 50),
                decoration: BoxDecoration(
-                 color: const Color(0xffDA1A32),
+                 color: red,
                  borderRadius: BorderRadius.circular(15),
                ),
                child: const Center(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/constant/colors.dart';
 import 'package:foodapp/presentation/routes/generated_routes.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: red),
         useMaterial3: true,
       ),
       initialRoute: '/',

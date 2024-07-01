@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/constant/colors.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
@@ -37,7 +38,7 @@ child: SafeArea(
            padding: const EdgeInsets.all(15),
            margin: const EdgeInsets.only(left: 100, right: 100),
            decoration: BoxDecoration(
-             color: const Color(0xffDA1A32),
+             color: red,
              borderRadius: BorderRadius.circular(10),
            ),
            child: const Center(

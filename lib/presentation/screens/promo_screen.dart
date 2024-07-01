@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:foodapp/constant/colors.dart';
 
 class PromotionScreen extends StatelessWidget {
   const PromotionScreen({super.key});
@@ -21,7 +21,7 @@ class PromotionScreen extends StatelessWidget {
           'Promo Day',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: Color(0xffDA1A32),
+            color: red,
           ),
         ),
         actions: [

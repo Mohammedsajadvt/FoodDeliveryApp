@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/presentation/screens/drinks_screen.dart';
+import 'package:foodapp/presentation/screens/pasta_screen.dart';
+import 'package:foodapp/presentation/screens/pizza_screen.dart';
+import 'package:foodapp/presentation/screens/rice_screen.dart';
 
 class Categories extends StatelessWidget {
   const Categories({super.key});
@@ -17,23 +21,31 @@ class Categories extends StatelessWidget {
       "Rice",
       "Drinks"
     ];
+    List<Widget> screens = [
+      PizzaScreen(),
+      PastaScreen(),
+      RiceScreen(),
+      DrinksScreen()
+    ];
     return ListView.builder(
       itemCount: items.length,
       scrollDirection: Axis.horizontal,
       itemBuilder: (context, index) {
         return Container(
-          margin: EdgeInsets.all(8.0),
+          margin: const EdgeInsets.all(8.0),
           child: Column(
             children: [
               InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => screens[index]));
+                },
                 child: CircleAvatar(
                   radius: 40.0,
                   backgroundImage: NetworkImage(items[index]),
                 ),
               ),
-              SizedBox(height: 8.0),
-              Text(names[index],style: TextStyle(fontWeight: FontWeight.bold),)
+              const SizedBox(height: 8.0),
+              Text(names[index],style: const TextStyle(fontWeight: FontWeight.bold),)
             ],
           ),
         );

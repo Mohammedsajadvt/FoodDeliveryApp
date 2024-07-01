@@ -1,35 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class WishlistScreen extends StatelessWidget {
-  const WishlistScreen({super.key});
+class PizzaScreen extends StatelessWidget {
+  const PizzaScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Wishlists',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Color(0xffDA1A32),
-          ),
-        ),
-        backgroundColor: Colors.white,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: InkWell(
-              onTap: () {
-                Navigator.of(context).pushNamed('/profile');
-              },
-              child: const CircleAvatar(
-                backgroundImage: NetworkImage(
-                    'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.1900052020.1717854544&semt=sph'),
-              ),
-            ),
-          ),
-        ],
+        leading: IconButton(onPressed: (){
+          Navigator.pop(context);
+        }, icon: const Icon(CupertinoIcons.back)),
       ),
       body: SingleChildScrollView(
         child: Padding(

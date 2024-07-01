@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:foodapp/constant/colors.dart';
 import 'package:foodapp/presentation/widgets/card_widget.dart';
 import 'package:foodapp/presentation/widgets/categories.dart';
 
@@ -11,12 +12,12 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading:  Padding(
-          padding: EdgeInsets.all(5.0),
+          padding: const EdgeInsets.all(5.0),
           child: InkWell(
             onTap: (){
               Navigator.of(context).pushNamed('/profile');
             },
-            child: CircleAvatar(
+            child: const CircleAvatar(
               backgroundImage: NetworkImage(
                   'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.1900052020.1717854544&semt=sph'),
             ),
@@ -29,7 +30,7 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: const Icon(CupertinoIcons.chat_bubble_fill,color: Color(0xffDA1A32),),
+            icon: const Icon(CupertinoIcons.chat_bubble_fill,color: red,),
           )
         ],
       ),
@@ -68,14 +69,14 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 8,right: 8),
               child: Container(
                 height: 130, 
-                child: Categories(),
+                child: const Categories(),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10.0),
+            const Padding(
+              padding: EdgeInsets.all(10.0),
               child: Text('Popular',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
             ),
-            CardWidget()
+            const CardWidget()
           ],
         ),
       ),
